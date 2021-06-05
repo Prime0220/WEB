@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6장 테이블 (p.126 ~ 143)</title>
+    </head>
+    <body>
+        <table>
+            <tr> <!--행-->
+                <td>15</td><!--열-->
+                <td>15</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>45</td>
+                <td>60</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>60</td>
+                <td>90</td>
+                <td>90</td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <th></th>
+                <th scope="col">토요일</th>
+                <th scope="col">일요일</th>
+            </tr>
+            <tr>
+                <th scope="row">티켓 판매 : </th>
+                <th>120</th>
+                <th>135</th>
+            </tr>
+            <tr>
+                <th scope="row">총 매출 : </th>
+                <th>$600</th>
+                <th>$675</th>
+            </tr>
+
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <th></th>
+                <th>9am</th>
+                <th>10am</th>
+                <th>11am</th>
+                <th>12am</th>
+            </tr>
+            <tr>
+                <th>월요일</th>
+                <td colspan="2">지리</td>
+                <th>수학</th>
+                <th>미술</th>
+            </tr>
+            <tr>
+                <th>화요일</th>
+                <td colspan="3">체육</td>
+                <th>가정</th>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <th></th>
+                <th>ABC</th>
+                <th>BBC</th>
+                <th>CNN</th>
+            </tr>
+            <tr>
+                <th>6pm ~ 7pm</th>
+                <td rowspan="2">영화</td>
+                <td>코미디</td>
+                <td>뉴스</td>
+            </tr>
+            <tr>
+                <th>7pm ~ 8pm</th>
+                <td>스포츠</td>
+                <td>시사</td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th>일자</th>
+                    <th>수입</th>
+                    <th>지출</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1월1일</th>
+                    <td>250</td>
+                    <td>36</td>
+                </tr>
+                <tr>
+                    <th>1월2일</th>
+                    <td>28</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <th>...</th>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <th>1월31일</th>
+                    <td>129</td>
+                    <td>64</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td>7824</td>
+                    <td>1241</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+        <table width = "400" cellpadding = "10" cellspacing = "5">
+            <tr>
+                <th width = "150"></th>
+                <th>인출</th>
+                <th>예금</th>
+                <th width = "150">잔고</th>
+            </tr>
+            <tr>
+                <th>1월</th>
+                <td>250.00</td>
+                <td>660.50</td>
+                <td>410.50</td>
+            </tr>
+            <tr>
+                <th>2월</th>
+                <td>135.55</td>
+                <td>895.20</td>
+                <td>1170.15</td>
+            </tr>
+        </table>
+        <hr>
+        <table border = "2" bgcolor = "#efefef">
+            <tr>
+                <th width = "150"></th>
+                <th>인출</th>
+                <th>예금</th>
+                <th bgcolor="#cccccc">잔고</th>
+            </tr>
+            <tr>
+                <th>2월</th>
+                <td>135.55</td>
+                <td>895.20</td>
+                <td bgcolor="#cccccc">1170.50</td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th scope="col">가정용 호스팅</th>
+                    <th scope="col">기업용 호스팅</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">디스크 공간</th>
+                    <td>250MB</td>
+                    <td>1GB</td>
+                </tr>
+                <tr>
+                    <th scope="row">대역폭</th>
+                    <td>5GB / 월</td>
+                    <td>50GB / 월</td>
+                </tr>
+                <tr>
+                    <th scope="row">이메일 계정</th>
+                    <td>3</td>
+                    <th>10</th>
+                </tr>
+                <tr>
+                    <th scope="row">서버</th>
+                    <td>공유</td>
+                    <td>가상 서버 호스팅 (VPS)</td>
+                </tr>
+                <tr>
+                    <th scope="row">지원 방법</th>
+                    <td>이메일</td>
+                    <td>전화와 이메일</td>
+                </tr>
+                <tr>
+                    <th scope="row">설정</th>
+                    <td>무료</td>
+                    <td>무료</td>
+                </tr>
+                <tr>
+                    <th scope="row">FTP 계정</th>
+                    <td>1</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td colspan="2">지금 가입하면 10% 할인 ! </td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+    </body>
+</html>
