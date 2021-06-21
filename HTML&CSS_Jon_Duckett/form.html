@@ -26,9 +26,81 @@
         </form>
         <hr>
         <h2>라디오 버튼</h2>
+        <form action="">
+            <p>좋아하는 장르를 선택해주세요 : 
+                <br>
+                <input type="radio" name="genre" value="rock" checked = "checked"> 락
+                <input type="radio" name="genre" value="pop"> 팝
+                <input type="radio" name="genre" value="jazz"> 재즈
+            </p>
+        </form>
+        <hr>
+        <h2>체크박스</h2>
+        <form action="">
+            <p>좋아하는 음악 서비스들을 선택해주세요 : 
+                <br>
+                <input type="checkbox" name="service" value="itunes"> 아이튠즈(iTunes)
+                <input type="checkbox" name="service" value="lastfm"> 라스트 FM(last.fm)
+                <input type="checkbox" name="service" value="spotify"> 스포티파이(Spotify)
+            </p>
+        </form>
+        <hr>
+        <h2>그롭다운 리스트 박스</h2>
+        <form action="">
+            <p>어떤 기기를 사용하여 음악을 들으십니까?
+                <select name="devices" >
+                    <option value="ipod">아이팟</option>
+                    <option value="radio">라디오</option>
+                    <option value="computer">컴퓨터</option>
+                </select>
+            </p>
+        </form>
+        <hr>
+        <h2>다중 셀렉트 박스</h2>
+        <form action="">
+            <p>다음 중 연주 가능한 악기는? (PC에서는 컨트롤 키를, 맥에서는 커맨드 키를 누르면 하나 이상 선택할 수 있다.)</p>
+            <select name="instruments">
+                <option value="guitar" selected = "selected">기타</option>
+                <option value="drums">드럼</option>
+                <option value="keyboard" selected = "selected">키보드</option>
+            </select>
+        </form>
+        <hr>
+        <h2>파일 입력 박스</h2>
+        <form action="" method="post">
+            <p>MP3 포맷으로 노래를 올리세요. </p> 
+                <input type="file" name="user-song" > <br>
+                <input type="submit" value="Upload">
+        </form>
+        <hr>
+        <h2>전송 버튼</h2>
+        <form action="">
+            <p>이메일 목록에 가입하세요. </p>
+            <input type="text" name = "email">
+            <input type="submit" name = "subscribe" value="가입">
+        </form>
+        <hr>
+        <h2>이미지 버튼</h2>
+        <p>이메일 목록에 가입하세요. </p>
+            <input type="text" name = "email">
+            <input type="image" src="../images/signinbtn.jpg" width="100" height="20">
+        </form>
+        <hr>
+        <h2>button & hidden 컨트롤</h2>
+        <form action="">
+            <button><img src="../images/add.png" alt="add" width="10" height="10">추가</button>
+            <input type="hidden" name = "bookmark" value="lyrics">
+        </form>
+        <hr>
+        <h2>폼 컨트롤에 레이블 붙이기</h2>
+        <label>나이 : <input type="text" name = "age"></label>
+        <br> 성별:
+    <input id="female" type="radio" name = "gender" value="f" >
+    <label for="female">여성</label>
+    <input id="male" type="radio" name="gender" value="m" >
+    <label for="male">남성</label>
+
         
-
-
 
     </body>
 </html>
